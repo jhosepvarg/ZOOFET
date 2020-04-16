@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="ZOOFET.animales">
+             x:Class="ZOOFET.animales"
+             Title="Nuestros Animales">
 
     <ContentPage.Content>
 
@@ -18,7 +19,7 @@
 
                     <RowDefinition Height="Auto"></RowDefinition>
                     <RowDefinition Height="400"></RowDefinition>
-                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="100"></RowDefinition>
            
 
                 </Grid.RowDefinitions>
@@ -31,7 +32,7 @@
                        FontSize="18"
                 ></Label>
 
-
+ 
                 </StackLayout>
 
              
@@ -41,10 +42,12 @@
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
+
+                                <ContentView Padding="1" Margin="20,5" HeightRequest="80">
                                     <StackLayout BackgroundColor="#eee"
                         Orientation="Vertical">
                                         <StackLayout Orientation="Horizontal">
-                                            <Image Source="jirafa.jog" HeightRequest="70" WidthRequest="90"/>
+                                            <Image Source="jirafa.jog" HeightRequest="45" WidthRequest="90"/>
                                             <Label Text="lalalala"
                                 TextColor="#f35e20" />
                                             <Label Text="Big animal"
@@ -52,6 +55,8 @@
                                 TextColor="#503026" />
                                         </StackLayout>
                                     </StackLayout>
+                                </ContentView>
+                                    
                                 </ViewCell>
                             </DataTemplate>
                         </ListView.ItemTemplate>
@@ -73,18 +78,7 @@
           
 
 
-                <StackLayout Grid.Row="2" Padding="30,20">
-
-                    <Label Text="Proponemos la proteccion de algunas especies en peligro de extinción"
-                       TextColor="Gray"
-                       HorizontalTextAlignment="Center"
-                       HorizontalOptions="End"
-                       FontAttributes="Italic"
-                       FontSize="20">
-
-                    </Label>
-
-                </StackLayout>
+               
 
                
 
