@@ -141,4 +141,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\fondo2.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\jirafa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icono.jpg" />
+  </ItemGroup>
 </Project>
