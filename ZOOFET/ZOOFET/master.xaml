@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ZOOFET.master"
+             Title="Master">
+
+    <StackLayout BackgroundColor="Gray">
+        <Button Text="Animales"
+                x:Name="animales"
+                Clicked="animales_Clicked"
+                BackgroundColor="Transparent"
+                TextColor="White">
+
+        </Button>
+
+        <Button
+            Text="Contactenos"
+            x:Name="contactenos"
+            Clicked="contactenos_Clicked"
+            BackgroundColor="Transparent"
+            TextColor="White">
+            
+        </Button>
+
+        <Button
+            Text="Reservas"
+            x:Name="reservas"
+            Clicked="reservas_Clicked"
+            BackgroundColor="Transparent"
+            TextColor="White">
+
+        </Button>
+
+
+    </StackLayout>
+    
+  
+</ContentPage>

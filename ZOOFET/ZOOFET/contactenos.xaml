@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ZOOFET.contactenos">
+
+    <ContentPage.Content>
+
+        <Grid>
+
+            <Image Source="fondo2.jpg" Aspect="AspectFill"></Image>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="100"></RowDefinition>
+                    <RowDefinition Height="100"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="1" Padding="30,20">
+                    <Label Text="Acá te dejaremos nuestras redes, telefono y Fan Page."
+                       TextColor="Gray"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"
+                       FontSize="19"
+                ></Label>
+
+
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" Padding="30,20">
+
+                    <Label Text="Redes: "
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center"
+                       HorizontalOptions="End"
+                       FontAttributes="Italic"
+                       FontSize="20">
+
+                    </Label>
+
+                </StackLayout>
+
+                <StackLayout Grid.Row="4" Padding="30,20">
+
+                    <Label Text="Fan Page: "
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center"
+                       HorizontalOptions="End"
+                       FontAttributes="Italic"
+                       FontSize="20">
+
+                    </Label>
+
+                </StackLayout>
+
+            </Grid>
+
+        </Grid>
+
+    </ContentPage.Content>
+
+</ContentPage>

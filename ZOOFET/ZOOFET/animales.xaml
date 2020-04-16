@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ZOOFET.animales">
+
+    <ContentPage.Content>
+
+        <Grid>
+
+            <Image Source="fondo1.jpg" Aspect="AspectFill"></Image>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="100"></RowDefinition>
+                    <RowDefinition Height="100"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="1" Padding="30,20">
+                    <Label Text="Estas son algunas de nuestras especies: "
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"
+                       FontSize="20"
+                ></Label>
+
+
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" Padding="30,20">
+
+                    <Label Text="Proponemos la proteccion de algunas especies en peligro de extinción"
+                       TextColor="Gray"
+                       HorizontalTextAlignment="Center"
+                       HorizontalOptions="End"
+                       FontAttributes="Italic"
+                       FontSize="20">
+
+                    </Label>
+
+                </StackLayout>
+
+               
+
+            </Grid>
+
+        </Grid>
+
+    </ContentPage.Content>
+
+</ContentPage>
