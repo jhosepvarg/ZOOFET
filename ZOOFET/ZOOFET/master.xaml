@@ -34,7 +34,14 @@
 
         </Button>
 
-
+        <Button Text="Login Admin"
+                x:Name="login_admin"
+                Clicked="login_admin_Clicked"
+                BackgroundColor="Transparent"
+                TextColor="White">
+            
+        </Button>
+        
     </StackLayout>
     
   

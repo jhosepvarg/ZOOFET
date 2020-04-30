@@ -31,5 +31,10 @@ namespace ZOOFET
         {
             await App.MasterD.Detail.Navigation.PushAsync(new reservas());
         }
+
+        private async void login_admin_Clicked(object sender, EventArgs e)
+        {
+            await App.MasterD.Detail.Navigation.PushAsync(new login_admin());
+        }
     }
 }

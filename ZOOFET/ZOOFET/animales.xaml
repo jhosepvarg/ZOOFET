@@ -41,13 +41,14 @@
                     <ListView  x:Name="Lista_animales" Grid.Row="1">
                         <ListView.ItemTemplate>
                             <DataTemplate >
-                                <ViewCell>
+                                
+                                <ViewCell >
 
-                                <ContentView Padding="1" Margin="20,5" HeightRequest="1000">
+                                <ContentView Padding="1" HeightRequest="200" Margin="20,5" >
                                     <StackLayout BackgroundColor="Transparent"
                         Orientation="Vertical">
                                         <StackLayout Orientation="Horizontal">
-                                            <Image Source="{Binding imagen}" HeightRequest="45" WidthRequest="90"/>
+                                            <Image Source="{Binding imagen}" HeightRequest="30" WidthRequest="90"/>
                                             <Label Text="{Binding nombre}"
                                 TextColor="Black" />
                                             <Label Text="{Binding descripcion}"

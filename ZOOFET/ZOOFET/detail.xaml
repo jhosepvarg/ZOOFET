@@ -49,7 +49,9 @@
 
                 <StackLayout Grid.Row="4" Padding="30,20">
 
-                    <Button Text="¿Quieres Reservar Tu Entrada?" 
+                    <Button x:Name="redirect_reservas"
+                            Clicked="redirect_reservas_Clicked"
+                        Text="¿Quieres Reservar Tu Entrada?" 
                         VerticalOptions="End"
                         BackgroundColor="Transparent"
                         BorderColor="White"

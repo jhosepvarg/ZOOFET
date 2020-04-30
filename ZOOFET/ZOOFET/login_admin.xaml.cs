@@ -10,18 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace ZOOFET
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class detail : ContentPage
+    public partial class login_admin : ContentPage
     {
-        public detail()
+        public login_admin()
         {
             InitializeComponent();
-        }
-
-        private async void redirect_reservas_Clicked(object sender, EventArgs e)
-        {
-          
-
-            await App.MasterD.Detail.Navigation.PushAsync(new reservas());
         }
     }
 }
