@@ -7,6 +7,7 @@ namespace ZOOFET.models
     public class listar_animales
     {
 
+        public int id_animal { get; set; }
 
         public string nombre { get; set; }
 

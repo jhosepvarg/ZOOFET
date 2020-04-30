@@ -11,7 +11,7 @@
 
         <Grid>
 
-            <Image Source="fondo2.jpg" Aspect="AspectFill"></Image>
+            <Image BackgroundColor="Lavender" Aspect="AspectFill"></Image>
 
             <Grid>
 
@@ -24,9 +24,9 @@
 
                 </Grid.RowDefinitions>
 
-                <StackLayout Grid.Row="1" Padding="30,20">
+                <StackLayout Grid.Row="0" Padding="30,20">
                     <Label Text="Acá te dejaremos nuestras redes, telefono y Fan Page."
-                       TextColor="Gray"
+                       TextColor="Black"
                        HorizontalOptions="Center"
                        FontAttributes="Bold"
                        FontSize="19"
@@ -40,8 +40,8 @@
                     <Label Text="Redes: "
                        TextColor="Black"
                        HorizontalTextAlignment="Center"
-                       HorizontalOptions="End"
-                       FontAttributes="Italic"
+                       HorizontalOptions="Start"
+                       FontAttributes="Bold"
                        FontSize="20">
 
                     </Label>
@@ -53,8 +53,8 @@
                     <Label Text="Fan Page: "
                        TextColor="Black"
                        HorizontalTextAlignment="Center"
-                       HorizontalOptions="End"
-                       FontAttributes="Italic"
+                       HorizontalOptions="Start"
+                       FontAttributes="Bold"
                        FontSize="20">
               
                         

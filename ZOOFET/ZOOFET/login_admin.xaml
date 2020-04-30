@@ -6,12 +6,44 @@
              mc:Ignorable="d"
              x:Class="ZOOFET.login_admin"
              Title="Inicio De Sesion Admin">
-    
+
     <ContentPage.Content>
-        <StackLayout>
-          
+
+        <Grid>
+
+            <Image Source="fondo.jpg" Aspect="AspectFill"></Image>
+
+            <Grid>
+
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="80"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="200"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="40"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="40"></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Row="2" Grid.Column="1">
+
+                    <Entry  x:Name="usser" Keyboard="Default" PlaceholderColor="Black" Placeholder="Inserte Usuario"></Entry>
+                    <Entry  x:Name="pass" Keyboard="Default" PlaceholderColor="Black" Placeholder="Inserte Contraseña"></Entry>
+                    <Button Text="Ingresar" BackgroundColor="Gray" BorderColor="Black"></Button>
+
+                </StackLayout>
+
+            </Grid>
             
-            
-        </StackLayout>
+        </Grid>
+
     </ContentPage.Content>
 </ContentPage>

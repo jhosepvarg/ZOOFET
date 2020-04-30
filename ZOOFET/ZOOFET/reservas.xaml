@@ -6,5 +6,46 @@
              mc:Ignorable="d"
              x:Class="ZOOFET.reservas"
              Title="Reservas">
-   
+
+    <ContentPage.Content>
+
+        <Grid>
+            <Image BackgroundColor="Lavender" Aspect="AspectFill"></Image>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="80"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="200"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="40" ></ColumnDefinition>
+                    <ColumnDefinition Width="*" ></ColumnDefinition>
+                    <ColumnDefinition Width="40" ></ColumnDefinition>
+                    
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Row="2" Grid.Column="1">
+
+                    <Entry  x:Name="nombre" Keyboard="Default" PlaceholderColor="Black" Placeholder="Inserte Nombre Completo"></Entry>
+                    <Entry  x:Name="dni" Keyboard="Numeric" PlaceholderColor="Black" Placeholder="Documento De Indentidad"></Entry>
+                    <Entry  x:Name="correo" Keyboard="Email" PlaceholderColor="Black" Placeholder="Inserte Correo"></Entry>
+                    <Entry  x:Name="cantidad" Keyboard="Numeric" PlaceholderColor="Black" Placeholder="Cantidad De Boletos A Comprar"></Entry>
+                    <Button Text="Cmprar entrada" BackgroundColor="Gray" BorderColor="Black"></Button>
+
+                </StackLayout>
+
+            </Grid>
+            
+        </Grid>
+        
+    </ContentPage.Content>
+    
+    
 </ContentPage>
