@@ -11,7 +11,7 @@
 
         <Grid>
 
-            <Image Source="fondo1.jpg" Aspect="AspectFill"></Image>
+            <Image BackgroundColor="Lavender" Aspect="AspectFill"></Image>
 
             <Grid>
 
@@ -38,19 +38,19 @@
              
 
 
-                    <ListView  x:Name="listView" Grid.Row="1">
+                    <ListView  x:Name="Lista_animales" Grid.Row="1">
                         <ListView.ItemTemplate>
-                            <DataTemplate>
+                            <DataTemplate >
                                 <ViewCell>
 
-                                <ContentView Padding="1" Margin="20,5" HeightRequest="80">
-                                    <StackLayout BackgroundColor="#eee"
+                                <ContentView Padding="1" Margin="20,5" HeightRequest="1000">
+                                    <StackLayout BackgroundColor="Transparent"
                         Orientation="Vertical">
                                         <StackLayout Orientation="Horizontal">
-                                            <Image Source="jirafa.jog" HeightRequest="45" WidthRequest="90"/>
-                                            <Label Text="lalalala"
-                                TextColor="#f35e20" />
-                                            <Label Text="Big animal"
+                                            <Image Source="{Binding imagen}" HeightRequest="45" WidthRequest="90"/>
+                                            <Label Text="{Binding nombre}"
+                                TextColor="Black" />
+                                            <Label Text="{Binding descripcion}"
                                 HorizontalOptions="EndAndExpand"
                                 TextColor="#503026" />
                                         </StackLayout>
@@ -61,17 +61,6 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
 
-                    <ListView.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Baboon</x:String>
-                            <x:String>Capuchin Monkey</x:String>
-                            <x:String>Blue Monkey</x:String>
-                            <x:String>Squirrel Monkey</x:String>
-                            <x:String>Golden Lion Tamarin</x:String>
-                            <x:String>Howler Monkey</x:String>
-                            <x:String>Japanese Macaque</x:String>
-                        </x:Array>
-                    </ListView.ItemsSource>
 
                 </ListView>
 
