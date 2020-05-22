@@ -20,34 +20,40 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="home.xaml.cs">
+    <Compile Update="Views\home.xaml.cs">
       <DependentUpon>home.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="animales.xaml">
+    <EmbeddedResource Update="Views\AddContactos.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="contactenos.xaml">
+    <EmbeddedResource Update="Views\animales.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="detail.xaml">
+    <EmbeddedResource Update="Views\contactenos.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="details.xaml">
+    <EmbeddedResource Update="Views\Contactos.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="home.xaml">
+    <EmbeddedResource Update="Views\detail.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="login_admin.xaml">
+    <EmbeddedResource Update="Views\home.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="master.xaml">
+    <EmbeddedResource Update="Views\InsertaAnimales.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="reservas.xaml">
+    <EmbeddedResource Update="Views\login_admin.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\master.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\reservas.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

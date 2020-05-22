@@ -41,7 +41,31 @@
                 TextColor="White">
             
         </Button>
-        
+
+        <Button Text="Insertar Animales"
+                x:Name="InsertarAnimales"
+                Clicked="InsertarAnimales_Clicked"
+                BackgroundColor="Transparent"
+                TextColor="White">
+
+        </Button>
+
+        <Button Text="Agregar Contacto"
+                x:Name="AddContacto"
+                Clicked="AddContacto_Clicked"
+                BackgroundColor="Transparent"
+                TextColor="White">
+
+        </Button>
+
+        <Button Text="Contactos"
+                x:Name="ListarContactos"
+                Clicked="ListarContactos_Clicked"
+                BackgroundColor="Transparent"
+                TextColor="White">
+
+        </Button>
+
     </StackLayout>
     
   

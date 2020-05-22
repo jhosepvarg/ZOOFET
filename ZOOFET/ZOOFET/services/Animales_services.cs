@@ -4,7 +4,7 @@ using System.Text;
 using System.Net.Http;
 using Newtonsoft.Json;
 using ZOOFET.services;
-using ZOOFET.models;
+using ZOOFET.Models;
 using System.Threading.Tasks;
 
 namespace ZOOFET.services

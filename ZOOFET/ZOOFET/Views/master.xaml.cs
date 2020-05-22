@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using ZOOFET.Views;
 
 namespace ZOOFET
 {
@@ -35,6 +36,21 @@ namespace ZOOFET
         private async void login_admin_Clicked(object sender, EventArgs e)
         {
             await App.MasterD.Detail.Navigation.PushAsync(new login_admin());
+        }
+
+        private async void InsertarAnimales_Clicked(object sender, EventArgs e)
+        {
+            await App.MasterD.Detail.Navigation.PushAsync(new InsertaAnimales());
+        }
+
+        private async void AddContacto_Clicked(object sender, EventArgs e)
+        {
+            await App.MasterD.Detail.Navigation.PushAsync(new AddContactos());
+        }
+
+        private async void ListarContactos_Clicked(object sender, EventArgs e)
+        {
+            await App.MasterD.Detail.Navigation.PushAsync(new Contactos());
         }
     }
 }

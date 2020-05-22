@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ZOOFET.Views.AddContactos">
+
+    <Grid>
+        <Image BackgroundColor="Lavender" Aspect="AspectFill"></Image>
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="80"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="200"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="40" ></ColumnDefinition>
+                <ColumnDefinition Width="*" ></ColumnDefinition>
+                <ColumnDefinition Width="40" ></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Row="2" Grid.Column="1">
+
+                <Entry  Text="{Binding Datos.nombre,Mode=TwoWay}" Keyboard="Default" PlaceholderColor="Black" Placeholder="Inserte Nombre De Contacto"></Entry>
+                <Entry  Text="{Binding Datos.telefono,Mode=TwoWay}" Keyboard="Numeric" PlaceholderColor="Black" Placeholder="Inserte Telefono"></Entry>
+                <Button Text="Agregar" Command="{Binding AddContactosButtonCommand}"></Button>
+            </StackLayout>
+
+        </Grid>
+
+    </Grid>
+
+</ContentPage>

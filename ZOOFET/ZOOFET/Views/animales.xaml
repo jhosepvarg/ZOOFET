@@ -38,7 +38,7 @@
              
 
 
-                    <ListView  x:Name="Lista_animales" Grid.Row="1">
+                    <ListView  ItemsSource="{Binding Animales}" x:Name="Lista_animales" Grid.Row="1">
                         <ListView.ItemTemplate>
                             <DataTemplate >
                                 
@@ -48,7 +48,7 @@
                                     <StackLayout BackgroundColor="Transparent"
                         Orientation="Vertical">
                                         <StackLayout Orientation="Horizontal">
-                                            <Image Source="{Binding imagen}" HeightRequest="30" WidthRequest="90"/>
+                                            <Image Source="{Binding imagen }" HeightRequest="30" WidthRequest="90"/>
                                             <Label Text="{Binding nombre}"
                                 TextColor="Black" />
                                             <Label Text="{Binding descripcion}"

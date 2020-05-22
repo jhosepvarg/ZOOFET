@@ -4,18 +4,14 @@ using System.Text;
 
 namespace ZOOFET.Models
 {
-    public class listar_animales
+    public class InsertarAnimales
     {
 
         public int id_animal { get; set; }
 
         public string nombre { get; set; }
 
-
-        public string imagen { get; set; }
-
-
         public string descripcion { get; set; }
 
-    }    
+    }
 }

@@ -11,6 +11,6 @@ namespace ZOOFET.services
 {
         public class Api
     {
-        public string Url { get; } = "https://2d046677.ngrok.io/";
+        public string Url { get; } = "https://bb1c78b9.ngrok.io/";
     }
 }
